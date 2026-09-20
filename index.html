@@ -1,14 +1,109 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Web Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        
+#main-heading {
+  color:blue;
+  text-align: center;
+}
+
+.text {
+  background-color: lightgray;
+}
+
+    </style>    
 </head>
 <body>
+<table>
+    <tr>
+        <th>Heading 1</th>
+        <th>Heading 2</th>
+    </tr>
+    <tr>
+        <td>Row 1</td>
+        <td>Row 1</td>
+    </tr>
+    <tr>
+        <td>Row 2</td>
+        <td>Row 2</td>
+    </tr>
+</table>
+<br><br>
+<table>
+    <tr>
+        <td>row 1</td>
+        <td>row 1</td>
+        <td>row 1</td>
+    </tr>
+    <tr>
+        <td colspan="3">3 columns</td>
+    </tr>   
+    </tr>
+    <tr>
+        <td rowspan="2">2 rows</td>
+        <td>row 3</td>
+        <td>row 3</td>
+    </tr>
+    <tr>
+        <td>row 4</td>
+        <td>row 4</td>
+    </tr>
+</table>
+<br><br>
+<!--this is a table-->
+<table>
+    <thead>
+        <tr>
+            <td></td>
+            <th scope="col">Column heading 1</th>
+            <th scope="col">Column heading 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Row heading 1</th>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">Row heading 2</th>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
 
-    <h1>Welcome to My Website</h1>
-    <p>This is a basic paragraph of text inside a standard HTML .</p>
-
+<h1 id="main-heading">Welcome to my website</h1>
+<p class="text">This is a fast and responsive web app.</p>
+<p class="text">It works completely offline.</p>
+<img src="image.jpg" value="one" />
+<script src="path/to.js"></script>
+<script src="path/to.js" async></script>
+<script src="path/to.js" defer></script>
+<noscript>javascript disabled</noscript>
+<link rel="stylesheet" href="path" type="text/css">
+<link rel="preconnect" href="url">
+<link rel="dns-prefetch" href="url">
+<link rel="prefetch" href="url">
+<link rel="prerender" href="url">
+<link rel="prev" href="">
+<link rel="next" href="">
+<script src="example.js"></script>
+<script type="text/javascript" src="example.js" async></script>
+<img src="image.png" alt="test">
+<blockquote>sample text</blockquote>
+<a href="url" ><img src="image.png" alt="test"></a>
 </body>
 </html>
