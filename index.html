@@ -87,7 +87,7 @@
 
 <h1 id="main-heading">Welcome to my website</h1>
 <p class="text">Welcome to my website</p>
-<img src="image.jpg" value="one" />
+<img src="images.jpeg" value="one" />
 <script src="path"></script>
 <script src="path" async></script>
 <script src="path" defer></script>
@@ -104,5 +104,100 @@
 <img src="image.png" alt="test">
 <blockquote>sample text</blockquote>
 <a href="url" ><img src="image.png" alt="test"></a>
+<br>
+
+<label>Name:</label>
+  <input type="text" id="username" name="name" required>
+<label>Email:</label>
+  <input type="email" id="useremail" name="email" required>
+  <button type="submit">Submit</button>
+  <br>
+<label>Name:</label>
+<input type="text" placeholder="first name" value="">
+<input type="text"  value="" disabled>
+<br>
+<label>
+<input type="radio" name="color" id="red" value="">red
+<input type="radio" name="color" id="blue" value="">blue
+<input type="radio" name="color" id="green" value="">green
+</label>
+<br>
+<input type="checkbox" name="text" value="" id="yes" checked>
+<label>yes</label>
+<input type="checkbox" name="text" value="" id="no">
+<label>no</label>
+<br>
+<input type="number" size="2" name="marks" min="0" max="10" />
+<input type="color" name="favcolor" value="#111">
+<input type="password" name="password" placeholder="Password">
+<input type="hidden" name="inputName" value="inputValue">
+<input type="tel" name="phone number" value="869786987">
+<input type="number" value="0" name="quantity">
+<input type="image" src="images.jpeg" alt="img" height="150px" width="150px"/>
+<fieldset>
+<label>Meeting time: 
+    <input type="datetime-local" name="datetime">
+</label>
+</fieldset>
+<br>
+<form>
+<fieldset>
+<legend>Contact</legend>
+Name:<br>
+<input type="text"><br>
+Email:<br>
+<input type="text"><br>
+</fieldset><br>
+<input type="submit" value="Submit">
+</form>
+<div class="outer-div" style="border: 1px solid red; padding: 10px;">
+<div class="inner-div" style="border: 1px solid blue;">
+<p>This is a paragraph</p>
+</div>
+<div class="inner-div" style="border: 1px solid blue;">
+<p>This is another paragraph</p>
+</div>
+</div>
+
+<nav role="navigation">
+<ul>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/services">Services</a></li>
+</ul>
+</nav>
+
+<section>
+<article>
+<header>
+<h1>Blog Post</h1>
+<time datetime="2026-09-22">22 sep 2026</time>
+</header>
+<p>This is a sample blog post.</p>
+<section>
+<h2>Comments <small>relating to "Blog Post"</small></h2>
+<article id="user">
+<p>Sample article</p>
+<footer><p>...</p><time>...</time></footer>
+</article>
+</section>
+</article>
+</section>
+
+<header>
+<nav>...</nav>
+</header>
+<main>
+<h1>heading</h1>
+<p>paragraph</p>
+<article>
+<h2>heading 2</h2>
+<p>para</p>
+</article>
+</main>
+<footer>
+<p>...</p>
+</footer>
+
 </body>
 </html>
