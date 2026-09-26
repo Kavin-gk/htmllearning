@@ -50,13 +50,6 @@ console.count(1);
 console.count('2');
 console.count('');
 
-console.count(console.constructor);
-console.count(function(){});
-console.count(Object);
-var fn1 = function myfn(){};
-console.count(fn1);
-console.count(Number);
-
 var name= "kavin";
 console.log(typeof name);
 
