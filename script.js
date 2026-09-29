@@ -259,6 +259,138 @@ console.log(1 !== '1');
 console.log(1 !== 2);
 console.log(1 !== 1);
 
+var animal = 'dog';
+var result = '';
+if (animal === 'dog') {
+    result = 'cute';
+} else {
+    result = 'still nice';
+}
+console.log(result);
+
+var animal = 'goat';
+var result = '';
+if (animal === 'dog') {
+    result = 'cute';
+} else if (animal === 'cat') {
+    result = 'still nice';
+} else if (animal === 'goat') {
+    result = 'happy';
+} else {
+    result = 'im okay';
+}
+console.log(result);
+
+var value = '';
+switch (value) {
+    case 1:
+        console.log ('i will run');
+        break;
+        case 2:
+            console.log ('i wont run');
+        break;
+        default:
+            console.log ('i will sleep');
+        break;
+}
+
+const AnimalSays = {
+dog () {
+return 'woof';
+},
+cat () {
+return 'meow';
+},
+lion () {
+return 'roar';
+},
+default () {
+return 'moo';
+}
+};
+console.log(AnimalSays.dog());
+console.log(AnimalSays.cat());
+console.log(AnimalSays.lion());
+console.log(AnimalSays.default());
+
+var realArray = ['a', 'b', 'c'];
+var arrayLike = {
+0: 'a',
+1: 'b',
+2: 'c',
+length: 3
+};
+
+var arr = ['apple', 'banana', 'cherry'];
+var arrLikeObj = {
+    0: 'apple',
+    1: 'banana',
+    2: 'cherry',
+    length: 3
+}
+console.log(arr[0]);
+console.log(arrLikeObj[2]);
+
+var arrLike = {
+    0: 'apple',
+    1: 'banana',
+    2: 'cherry',
+    length: 3
+}
+console.log(Array.from(arrLike));
+
+var arr = [1, 2, 3, 4, 5];
+var resultArr = [];
+for(let element of arr) {
+resultArr.push(element * 2);
+}
+console.log(resultArr)
+
+var arr1= [1, 2, 3, 4, 5];
+var arr2= [6, 7, 8, 9, 10];
+console.log(...arr1,...arr2)
+
+var arr= {
+    "apple": 1,
+    "banana": 2,
+    "cherry": 3
+};
+console.log(Object.keys(arr));
+console.log(Object.values(arr));
+
+var reducefunc = [1,2,3,4].reduce((a, b) => {
+    return a + b;
+});
+console.log(reducefunc);
+
+var reducefunc = [1,2,3,4].reduce((a, b) => {
+    return a + b;
+}, 2)
+console.log(reducefunc);
+
+var array = [{
+key: 'one',
+value: 1
+}, {
+key: 'two',
+value: 2
+}, {
+key: 'three',
+value: 3
+}];
+
+array.reduce(function(obj, current) {
+obj[current.key] = current.value;
+return obj;
+}, {});
+
+
+
+
+
+
+
+
 
 
 
