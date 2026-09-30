@@ -368,21 +368,61 @@ var reducefunc = [1,2,3,4].reduce((a, b) => {
 }, 2)
 console.log(reducefunc);
 
-var array = [{
-key: 'one',
-value: 1
-}, {
-key: 'two',
-value: 2
-}, {
-key: 'three',
-value: 3
-}];
+var arr = [1,2,3,5,7];
+var result = arr.map((value, index) => {
+    return value * 100
+});
+console.log(result);
 
-array.reduce(function(obj, current) {
-obj[current.key] = current.value;
-return obj;
-}, {});
+var arr = [1,2,4,5,7];
+var result = arr.filter((value, index) => {
+    return value % 2 === 0;
+});
+console.log(result);
+
+var result1 = [100, 1000, 10, 10000, 1].sort((a,b) => {
+    return a - b;
+});
+console.log(result1);
+
+var result1 = [100, 1000, 10, 10000, 1].sort((a,b) => {
+    return b - a;
+});
+console.log(result1);
+
+var result1 = ["zebras", "dogs", "elephants", "penguins"].sort((a,b) => {
+    return a.length - b.length;
+});
+console.log(result1);
+
+var result1 = ["zebras", "dogs", "elephants", "penguins"].sort((a,b) => {
+    return b.length - a.length;
+});
+console.log(result1);
+
+var arr = [2,5,8,1,4];
+for(i = 0; i < arr.length; i++) {
+    console.log(i);
+}
+
+var arr = [2,5,8,1,4];
+for(i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+var arr = [2,5,8,1,4];
+for (i in arr) {
+    console.log(i);
+}
+
+var arr = [2,5,8,1,4];
+for (i in arr) {
+    console.log(arr[i]);
+}
+
+
+
+
 
 
 
