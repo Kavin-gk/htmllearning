@@ -420,7 +420,72 @@ for (i in arr) {
     console.log(arr[i]);
 }
 
+var filterArray = ['a', 1, 'b', 1, 'c', 3];
+console.log([...new Set(filterArray)]);
 
+var uniqueArray = ['a', 1, 'a', 2, '1', 1].filter(function(value, index, self) {
+return self.indexOf(value) === index;
+});
+console.log(uniqueArray);
+
+var arr1 = [1,2,3,4];
+var arr2 = [1,2,3,4];
+console.log(JSON.stringify(arr1) === JSON.stringify(arr2));
+
+var arr1 = [1,2,3,4];
+var arr2 = [4,2,9,5];
+console.log(arr1.reverse());
+console.log(arr2.reverse());
+
+var arr4 = [1, 2, 3, [1, 2, 3, ['a', 'b', 'c']]];
+function deepReverse(arr4) {
+arr4.reverse().forEach(elem => {
+if(Array.isArray(elem)) {
+deepReverse(elem);
+}
+});
+return arr4;
+}
+console.log(deepReverse(arr4));
+
+var arr = [3,4,6,7];
+var arr2 = [...arr];
+var arr3 = arr;
+arr2[2] = 100;
+console.log(arr2[2], arr[2]);
+
+var array1 = [1, 2];
+var array2 = [3, 4, 5];
+var array3 = array1.concat(array2);
+console.log(array3);
+
+var columns = ["Date", "Number", "Size", "Location", "Age"];
+var rows = ["2001", "5", "Big", "Sydney", "25"];
+var result = rows.reduce(function(result, field, index) {
+result[columns[index]] = field;
+return result;
+}, {})
+console.log(result);
+
+var people = [
+{ name: "bob" },
+{ name: "john" }
+];
+var bob = people.find(person => person.name === "bob");
+console.log(bob);
+
+ var array = [
+{ value: 1 },
+{ value: 2 },
+{ value: 3 },
+{ value: 4 },
+{ value: 5 }
+];
+var index = array.findIndex(item => item.value === 3); 
+console.log(index);
+
+var string = "kavin";
+console.log(string.split("").join(""));
 
 
 
