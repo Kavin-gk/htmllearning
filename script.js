@@ -487,6 +487,65 @@ console.log(index);
 var string = "kavin";
 console.log(string.split("").join(""));
 
+var array = [1, 2, 3, 4];
+array.shift();
+console.log(array)
+
+var array = [1, 2, 3, 4];
+array.pop();
+console.log(array)
+
+var array = ["dog", "cat", 3, 4];
+array.splice(1, 2);
+console.log(array)
+
+var array = [1, 2, 3, 4, 5];
+delete array[3];
+console.log(array)
+
+var array = [1, 2, 3, 4, 5];
+array.length = 4;
+console.log(array);
+
+var array = [3, 4, 99, 20];
+console.log(Math.min.apply(null, array));
+console.log(Math.max.apply(null, array));
+console.log(Math.min(...array));
+
+var array = ["dog", "cat", 3, 4];
+for (const[index, element] of array.entries()) {
+    console.log(index, element);
+}
+
+var nums = [4,[5,6,[7,8],9],10,[11,12]];
+console.log(nums.flat(Infinity));
+
+var array = [3, 4, 5, 6];
+array.unshift(1, 2);
+console.log(array);
+
+var array = [1, 2, 3, 4];
+array.push(5, 6);
+console.log(array);
+
+var object = {
+key1: 10,
+key2: 3,
+key3: 40,
+key4: 20
+};
+var array = [];
+for(var people in object) {
+array.push([people, object[people]]);
+}
+console.log(array);
+
+
+
+
+
+
+
 
 
 
