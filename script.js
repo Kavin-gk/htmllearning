@@ -541,11 +541,135 @@ array.push([people, object[people]]);
 console.log(array);
 
 
+const obj = {
+    "venkat" : "bangalore",
+    "ajith" : 1,
+    "key3":  [{
+        key4: 2,
+        key5 : {
+            key6 : [{
+                key7: 4
+            }],
+        }
+    }]
+}
+console.log(obj.key3[0].key5.key6[0].key7)
+console.log(obj.ajith)
+
+
+const companyInfo = {
+  // Multiple standard key-value pairs
+  companyName: "TechNova Solutions",
+  foundedYear: 2018,
+  isActive: true,
+  headquarters: "San Francisco, CA",
+
+  // Level 1: Array of department objects
+  departments: [
+    {
+      deptId: "D01",
+      name: "Engineering",
+      budget: 500000,
+      
+      // Level 2: Nested array of team objects inside a department
+      teams: [
+        {
+          teamName: "Frontend",
+          lead: "Sarah Jenkins",
+          
+          // Level 3: Multilevel nested array of member objects inside a team
+          members: [
+            { id: 101, name: "Alice Kim", role: "Senior Engineer", skills: ["React", "TypeScript"] },
+            { id: 102, name: "Bob Smith", role: "UI Developer", skills: ["CSS", "Vue"] }
+          ]
+        },
+        {
+          teamName: "Backend",
+          lead: "Marcus Vance",
+          members: [
+            { id: 103, name: "Charlie Green", role: "DevOps Engineer", skills: ["AWS", "Docker"] },
+            { id: 104, name: "Diana Prince", role: "API Developer", skills: ["Node.js", "PostgreSQL"] }
+          ]
+        }
+      ]
+    },
+    {
+      deptId: "D02",
+      name: "Marketing",
+      budget: 150000,
+      teams: [
+        {
+          teamName: "Growth",
+          lead: "Elena Rostova",
+          members: [
+            { id: 201, name: "Evan Wright", role: "SEO Specialist", skills: ["Analytics", "Copywriting"] }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+console.log(companyInfo.departments[0].teams[0].members[0].name); 
+console.log(companyInfo.departments[1].teams[0].members[0].skills[1])
 
 
 
+const storeCatalog = {
+  // Multiple top-level values
+  storeName: "MegaMart Electronics",
+  totalCategories: 4,
+  isOpen247: true,
+  currency: "USD",
 
+  // Level 1: Array of category objects
+  categories: [
+    {
+      categoryId: "CAT-01",
+      categoryName: "Computers & Accessories",
+      floorNumber: 2,
 
+      // Level 2: Nested array of subcategory objects
+      subcategories: [
+        {
+          subName: "Laptops",
+          aisle: "A1",
+
+          // Level 3: Multilevel nested array of item objects
+          items: [
+            { sku: "LP-100", brand: "Dell", model: "XPS 13", price: 999.99, specs: ["16GB RAM", "512GB SSD"] },
+            { sku: "LP-200", brand: "Apple", model: "MacBook Air", price: 1099.00, specs: ["M3 Chip", "8GB RAM"] }
+          ]
+        },
+        {
+          subName: "Storage Devices",
+          aisle: "A2",
+          items: [
+            { sku: "ST-500", brand: "Samsung", model: "T7 Portable SSD", price: 89.99, specs: ["1TB", "USB 3.2"] }
+          ]
+        }
+      ]
+    },
+    {
+      categoryId: "CAT-02",
+      categoryName: "Audio",
+      floorNumber: 1,
+      subcategories: [
+        {
+          subName: "Headphones",
+          aisle: "B4",
+          items: [
+            { sku: "AU-301", brand: "Sony", model: "WH-1000XM4", price: 348.00, specs: ["Noise Cancelling", "30hr Battery"] },
+            { sku: "AU-302", brand: "Bose", model: "QuietComfort", price: 299.00, specs: ["Wireless", "Voice Assistant"] }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
+console.log(storeCatalog.categories[0].subcategories[0].items[1].model)
+console.log(storeCatalog.categories[0].subcategories[1].items[0].specs[0])
 
 
 
